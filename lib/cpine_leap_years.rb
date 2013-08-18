@@ -9,17 +9,18 @@ and 2004). However, years divisible by 100 are not leap years (such as
 
 =end
 
-puts 'We are going to see which years are leap years within in a range.'
-puts 'What year would you like to start with?'
-startyear = gets.chomp.to_i
-puts 'What year would you like to end with?'
-endyear = gets.chomp.to_i
-puts 'Here is a list of leap years between ' + startyear.to_s + ' to ' + endyear.to_s + ":"
-while startyear <= endyear
-    if startyear%400 == 0
-        puts startyear.to_s
-    elsif (startyear%100 > 0) && (startyear%4 == 0)
-        puts startyear.to_s    
+puts "We are going to see which years are leap years within in a range."
+puts "What year would you like to start with?"
+start_year = gets.chomp.to_i
+puts "What year would you like to end with?"
+end_year = gets.chomp.to_i
+puts "Here is a list of leap years between #{start_year} and #{end_year}:"
+year = start_year
+while year <= end_year
+    if year%400 == 0
+        puts year.to_s
+    elsif (year%100 > 0) && (year%4 == 0)
+        puts year.to_s    
     end
-    startyear=startyear+1
+    year += 1
 end
