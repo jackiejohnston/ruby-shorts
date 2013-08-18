@@ -19,3 +19,13 @@ def shuffle(given_arr)
     end
     return new_arr
 end
+
+=begin
+
+Chris Pine's much simpler solution:
+
+def shuffle arr
+arr.sort_by{rand}
+end
+
+=end
