@@ -1,4 +1,4 @@
-#  Write a method, sum which takes an array of numbers and returns the sum of 
+#  Write a method, sum, which takes an array of numbers and returns the sum of 
 #  the numbers.
 
 def sum(nums)
