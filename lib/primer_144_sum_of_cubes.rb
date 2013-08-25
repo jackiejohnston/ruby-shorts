@@ -10,6 +10,7 @@ Example Given range 1 to 3 the method should return 36
 
 =end
 
+
 def sum_of_cubes(a, b)
   (a..b).inject(0) { |result, element| result + (element * element * element) }
 end
