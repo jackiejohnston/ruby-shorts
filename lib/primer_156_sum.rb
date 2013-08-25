@@ -7,6 +7,7 @@
 #  my_array.sum(10) gives 16
 #  my_array.sum(0) {|n| n ** 2 } gives 14 
 
+
 class MyArray
   attr_reader :array
 
